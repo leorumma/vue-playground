@@ -14,7 +14,6 @@
         </template>
         <login-form></login-form>
       </b-modal>
-      <tri-state-checkbox v-model="val" label="Vite + Vue" />
       <jhi-footer></jhi-footer>
     </div>
   </div>

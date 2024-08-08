@@ -14,11 +14,12 @@ import LoginService from './account/login.service';
 import AccountService from './account/account.service';
 import { setupAxiosInterceptors } from '@/shared/config/axios-interceptor';
 import { useStore, useTranslationStore } from '@/store';
-import { TriStateCheckbox } from 'vue-tri-state-checkbox';
 
 import '../content/scss/global.scss';
 import '../content/scss/vendor.scss';
 import TranslationService from '@/locale/translation.service';
+
+import SearchFrameworkPlugin from 'search-framework-test';
 
 const pinia = createPinia();
 
@@ -161,7 +162,7 @@ app
   .component('jhi-item-count', JhiItemCountComponent)
   .component('jhi-sort-indicator', JhiSortIndicatorComponent)
   .use(router)
-  .component('tri-state-checkbox', TriStateCheckbox)
+  .use(SearchFrameworkPlugin)
   .use(pinia)
   .use(i18n)
   .mount('#app');

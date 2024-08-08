@@ -90,10 +90,10 @@
     "dayjs": "1.11.11",
     "deepmerge": "4.3.1",
     "pinia": "2.1.7",
+    "search-framework-test": "^0.0.18",
     "vue": "3.4.21",
     "vue-i18n": "9.13.1",
-    "vue-router": "4.4.0",
-    "vue-tri-state-checkbox": "^1.0.0"
+    "vue-router": "4.4.0"
   },
   "devDependencies": {
     "@pinia/testing": "0.1.3",
