@@ -19,7 +19,7 @@ import '../content/scss/global.scss';
 import '../content/scss/vendor.scss';
 import TranslationService from '@/locale/translation.service';
 
-import SearchFrameworkPlugin from 'search-framework-test';
+import SearchFrameworkVue3 from 'search-framework-vue-3';
 
 const pinia = createPinia();
 
@@ -162,7 +162,7 @@ app
   .component('jhi-item-count', JhiItemCountComponent)
   .component('jhi-sort-indicator', JhiSortIndicatorComponent)
   .use(router)
-  .use(SearchFrameworkPlugin, {
+  .use(SearchFrameworkVue3, {
     projectName: 'novoPortalTvvApp',
     prefixLabelI18n: 'global.label',
   })
