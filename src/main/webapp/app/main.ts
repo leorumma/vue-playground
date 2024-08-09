@@ -162,7 +162,10 @@ app
   .component('jhi-item-count', JhiItemCountComponent)
   .component('jhi-sort-indicator', JhiSortIndicatorComponent)
   .use(router)
-  .use(SearchFrameworkPlugin)
+  .use(SearchFrameworkPlugin, {
+    projectName: 'novoPortalTvvApp',
+    prefixLabelI18n: 'global.label',
+  })
   .use(pinia)
   .use(i18n)
   .mount('#app');
